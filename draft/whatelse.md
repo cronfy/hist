@@ -31,3 +31,16 @@
 ## Организация намерений
 
 Плоско/иерархическая структура документов координации направлений деятельности по ситуациям.
+
+## Музыка для работы
+
+ * https://music.yandex.ru/users/yamusic-sound/playlists/1016
+ * https://music.yandex.ru/users/ya.playlist/playlists/1280
+ * https://music.yandex.ru/artist/1621328/tracks
+ * https://music.yandex.ru/album/10563353
+ * https://music.yandex.ru/artist/61365/albums
+ * https://music.yandex.ru/album/3912586/track/23150639
+ * https://music.yandex.ru/artist/1637124
+ * https://music.yandex.ru/artist/2199959
+ * https://music.yandex.ru/artist/4139750
+ * https://music.yandex.ru/artist/18480/tracks
