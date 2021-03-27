@@ -1,35 +1,59 @@
 # Как создать в нашем репозитории новый сайт на Jekyll с нуля с использованием docker
 
-4.2 не заработал с ошибкой   
+## Определяемся с образом
 
-Bundler: Errno::EACCES: Permission denied @ rb_file_s_rename - (/home/jekyll/.local/share/gem/ruby/2.7.0/cache/rexml-3.2.4.gem, /usr/gem/cache/rexml-3.2.4.gem)
+Возьмем официальный jekyll/jekyll, но какой версии?
 
-3.9 нет
+ * 4.2 не заработал с ошибкой `Bundler: Errno::EACCES: Permission denied @ rb_file_s_rename - (/home/jekyll/.local/share/gem/ruby/2.7.0/cache/rexml-3.2.4.gem, /usr/gem/cache/rexml-3.2.4.gem)`
+ * 3.9 docker не существует
 
 Взял 3.8
 
-Статья https://michaelcurrin.github.io/code-cookbook/recipes/containers/jekyll.html
+## Как теперь запускать jekyll в docker
 
-./j bash
+Везде, где далее указано `jekyll команда` имеется в виду, что её нужно запускать в контейнере docker.
 
-Папка должна быть пустая
+Чтобы попасть в контейнер, нужно запустить `./j bash`.
 
-jekyll new .
+Для разовых команд можно `./j jekyll команда`
 
---> 
-...
-New jekyll site installed in /srv/jekyll. 
+## Как проинициализировать блог в папке
 
-jekyll build --trace
+За основу взял статью https://michaelcurrin.github.io/code-cookbook/recipes/containers/jekyll.html
 
--->
-...
-       Jekyll Feed: Generating feed for posts
-                    done in 0.407 seconds.
- Auto-regeneration: disabled. Use --watch to enable.
+Действия:
 
+* Создать **пустую** папку `./jekyll/` в корне репозитория.
+* Запускаем `./j bash` (перейдет в ./jekyll и запустит bash в jekyll docker)
+* `jekyll new .` проинициалмзирует блог, в конце выведет `New jekyll site installed in /srv/jekyll`.
+* `jekyll build` соберет папку `_site` выведет примерно это:
+    ```
+	ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-linux-musl]
+	Configuration file: /srv/jekyll/_config.yml
+	            Source: /srv/jekyll
+	       Destination: /srv/jekyll/_site
+	 Incremental build: disabled. Enable with --incremental
+	      Generating... 
+	       Jekyll Feed: Generating feed for posts
+	                    done in 0.43 seconds.
+	 Auto-regeneration: disabled. Use --watch to enable.
+	```
 
+В итоге будет собран собран пустой блог.
 
-jekyll serve
+## Просмотр на локалке
 
-DONE!
+ * `jekyll serve`
+
+В первый раз он будет долго молчать и думать, потом ставить пакеты. После этого выведет
+
+```
+    Server address: http://0.0.0.0:4000/
+  Server running... press ctrl-c to stop.
+```
+
+Можно заходить на http://0.0.0.0:4000/ , там отображается блог.
+
+## Размещение на github pages
+
+...информация дополняется...
