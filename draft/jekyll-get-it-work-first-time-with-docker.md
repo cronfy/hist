@@ -64,5 +64,9 @@ curl и wget все время получают кеш.
 для публицации выбрать `docs/`, а из него (или с него) сделать симлинк на что-либо вне 
 `docs/`, то github так и скажет [symbolic link ... targets a file which does not exist](https://docs.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites#symlink-does-not-exist-within-your-sites-repository)
 
+Придется копировать _site руками.
+
+Пришлось прописать baseurl в jekyll, т. к. gh-pages размещает все директории по имени репозитория,
+в моём случае репозиторий github.com/hist -> https://cronfy.github.io/hist/
 
 ...информация дополняется...
