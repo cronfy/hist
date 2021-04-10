@@ -1,1 +1,1 @@
-Sitemap: http://0.0.0.0:4000/hist/sitemap.xml
+Sitemap: /hist/sitemap.xml
