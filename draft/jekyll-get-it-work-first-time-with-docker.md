@@ -141,12 +141,74 @@ jekyll build
 jekyll serve
 ```
  
+## Тема
+
+Так, ну ладно. Блогов со стандартной темой на Jekyll много. Ее в любом случае нужно будет менять. Возьмем просто любую другую тему.
+
+Возьмем эту https://github.com/mmistakes/minimal-mistakes . Звездочек 7k, релизы свежие есть, и с десяток за 2020, видел её в статьях. Подойдет.
+
+Устанавливаем по инструкции с github.
+
+Ага, ей нужен сначала jekyll-include-cache. Прописываем jekyll-include-cache по инструкции (в Gemfile `group :jekyll_plugins` и в _config.yml в `plugins:`.
+
+Устанавливаем саму тему по инструкции - в Gemfile удаляем старую minima и добавляем нашу, а в _config.yml прописываем theme.
+
+Пробуем взлететь: 
+
+```
+./j bash
+bundle
+jekyll build
+```
+
+А, мы же там добавляли favicon и у нас в _include шапка от minima. Переименуем пока head.html в head.html.old и попробуем еще раз
+
+```
+jekyll build
+# ура!
+jekyll serve
+```
+
+Так, что-то ни фига. А где шаблон в постах? Ах, там в каждом посте прописан layout...
+
+Ага, там в quick start guide есть раздел [Starting from jekyll newPermalink](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#starting-from-jekyll-new), то что надо. Заменяем index.md. А что значит 'Be sure to enable pagination'? Ладно, потом разберемся, постов пока все равно нет. Возможно, речь про это https://jekyllrb.com/docs/pagination/ . Далее, в posts/ меняем layout, а about.md удаляем.
+
+```
+# ну что там?
+jekyll build
+# хм, собралось.
+jekyll serve
+# вот теперь нормально!
+```
+
+Правда все равно как-то бледненько. А, вот, если с `minimal_mistakes_skin` поиграться (а узнать про него можно, заглянув в пример конфига, ссылка на который есть [здесь](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#starting-fresh))), то что-то меняется. 
+
+Ладно, потом поиграемся, сейчас самое главное - вернуть favicon'ку!
+
+Гугл говорит, что для minimal-mistakes нужно менять favicon в `/_includes/head/custom.html`. Ок.
+
+```bash
+mkdir _includes/head
+bundle show minimal-mistakes
+cp /usr/local/bundle/gems/minimal-mistakes-jekyll-4.22.0/_includes/head/custom.html _includes/head
+# оп, чуть не забыл
+chown -R jekyll:jekyll _includes
+```
+
+Вставляем в custom.html то же самое для favicon'ок, что и раньше, и...
+
+```bash
+jekyll build
+jekyll serve
+# wooooooooooho!
+```
+
+Супер! Осталось разместить первый пост! А старый head.html.old от minima теперь можно и удалить. 
 
 ...информация дополняется...
 
 ## TODO
 
- * Тема
  * Первый пост
 
 ## Прочее
