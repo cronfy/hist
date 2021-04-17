@@ -1,0 +1,380 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Как вести блог в формате git? - Your awesome title</title>
+<meta name="description" content="Решил попробовать сделать запись для блога в git. И тут как начали появляться вопросы, как начали появляться вопросы!">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Your awesome title">
+<meta property="og:title" content="Как вести блог в формате git?">
+<meta property="og:url" content="/hist/v1/2021/03/06/how-to-blog-via-git.html">
+
+
+  <meta property="og:description" content="Решил попробовать сделать запись для блога в git. И тут как начали появляться вопросы, как начали появляться вопросы!">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-03-06T04:45:00-06:00">
+
+
+
+
+
+
+<link rel="canonical" href="/hist/v1/2021/03/06/how-to-blog-via-git.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "/hist/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/hist/feed.xml" type="application/atom+xml" rel="alternate" title="Your awesome title Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/hist/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<link rel="shortcut icon" href="/hist/assets/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/hist/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/hist/assets/favicon/favicon-16x16.png">
+
+<!-- end custom head snippets -->
+
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/hist/">
+          Your awesome title
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Как вести блог в формате git?">
+    <meta itemprop="description" content="Решил попробовать сделать запись для блога в git. И тут как начали появляться вопросы, как начали появляться вопросы!">
+    <meta itemprop="datePublished" content="2021-03-06T04:45:00-06:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Как вести блог в формате git?
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Решил попробовать сделать запись для блога в git. И тут как начали появляться вопросы, как начали появляться вопросы!</p>
+
+<p>Пост-размышление.</p>
+
+<hr />
+
+<p>Нужно подумать, что нужно учесть при ведении блога в формате репозитория git.</p>
+
+<p>Итак.</p>
+
+<p>Основные моменты понятны - берешь да ведёшь. Есть github.io для публикации. Есть Jekyll и аналоги.</p>
+
+<h2 id="структурирование-информации-и-изменения-структуры-редиректы">Структурирование информации и изменения структуры (редиректы)</h2>
+
+<p>Вопрос в структурировании информации и постоянных ссылках на неё. Если контент будет добавляться, то рано или поздно его захочется структурировать. Плоский список по дате создания неудобен, так как не решает задачу поиска нужной информации, когда вспомнил “я что-то такое писал об X, дай-ка посмотрю”.</p>
+
+<p>Соответственно, нужна иерархическая структура контента, не важно суть сейчас какая, главное, что она будет.</p>
+
+<p>Однако рано или поздно любая структура перестает нравиться и хочется её кардинально изменить.</p>
+
+<p>И в такой момент я не хочу вспоминать, в каких местах я оставлял ссылки на контент и могу ли я ими пожертвовать? Или я должен там отредактировать ссылку? Или нужно сделать редирект? Или придется оставить старую? Я не хочу после этого махать рукой “ай, ладно, проще в старой структуре все хранить”. Я хочу просто поменять структуру как мне удобно, не беспокоясь о том, что какие-то ссылки побьются. Хочу, чтобы изменение структуры происходило Без, Проб, Лем.</p>
+
+<p>Когда-нибудь мне может быть также захочется поменять структуру внешних URL. Ну мало ли. Или я буду вынужден сделать это по каким-то причинам. Соответственно, это не должно вызывать сложности - составил линковку старых ссылок на новые, сделал редиректы и вперед. (Сам процесс составления линковки не должен вызывать сложности).</p>
+
+<p>Я думаю, решить эту проблему можно таким способом расположения контента:</p>
+
+<p>Папка content/ — здесь хранится контент (не публикуется, только хранится). Содержит контент в любой структуре, в которой удобно. Ссылок сюда не даём. Это такой раздел с исходником информации.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">content/любая/структура/как/сейчас/удобно/хранить/контент/Пост_1</code> - пост 1, содержит файлы content.md и .metadata</li>
+  <li><code class="highlighter-rouge">content/любая/структура/как/сейчас/удобно/хранить/контент/Пост_2</code> - аналогично, пост 2</li>
+</ul>
+
+<p>Папка public/ — здесь публикуется контент</p>
+
+<ul>
+  <li><strong>public/v1/</strong> - первая версия структуры внешних URL (любая структура внешних URL)</li>
+  <li><code class="highlighter-rouge">public/v1/post1/</code> - Пост 1, содержит файлы index.html и .metadata</li>
+  <li><code class="highlighter-rouge">public/v1/post2/</code></li>
+  <li><strong>public/v2/</strong> - вторая версия структуры внешних URL (любая другая структура внешних URL)</li>
+  <li><code class="highlighter-rouge">public/v2/blog/2021-03-06-how-to-blog-in-git.html</code> - Пост 1</li>
+  <li><code class="highlighter-rouge">public/v2/programming/2021-02-18-phpstorm-is-cool.html</code> - Пост 2</li>
+</ul>
+
+<p>Изначально делаем <strong>public/v1/</strong>, и в ней размещаем посты методом копирования контента из content/. Оставляем мета-данные - из каких недр content’а нужно брать информацию сюда. В принципе, руками ничего копировать не надо - задачу решает автоматический генератор.</p>
+
+<p>Ссылки так и будут выглядеть: myblog.example.com/v1/… . Наверное, это единственный неприятный сайд-эффект от такой схемы. Но вместо v1, v2… можно писать что-нибудь веселенькое.</p>
+
+<p>Если мы решили поменять структуру внешних ссылок public/, то создаем новую папку <em>public/v2/</em>, настраиваем для неё генератор, чтобы публиковал посты по новой структуре, генерируем посты. После этого с предыдущей версии public/v1/ можно сделать редиректы на новую. Так как и в прежней и в новой версии public/ мы имеем ссылки на один и тот же content/, это будет несложно сделать.</p>
+
+<p>И тут важно отметить, что ссылкой, которую мы можем редиректить, может быть только html-файл (в связи с ограничениями github.io). А например, если у поста есть ресурс в виде приаттаченного doc-файла, то редирект для него сделать не получится. Так что, чтобы все упростить, ограничим наше стремление сохранять ссылки при перемещении только для постов (и договоримся, что если размещаем где-то ссылку на блог, то это должна быть ссылка именно на пост, а не на ресурс этого поста).</p>
+
+<p>Со сменой URL понятно, теперь про смену структуры контента. Тут тоже несложно.</p>
+
+<p>Если мы решили поменять структуру content/ - сохраняем у каждого контента метаданные, где он лежит сейчас, перераспределяем все по новым папкам, составляем карту линковки старое -&gt; новое, проходимся по метаданным public/v…/, перебиваем старую линковку (это которая в метаданных) на content/ на новую.</p>
+
+<p>Вот. Как-то так. Кто-то скажет: избыточность, а я скажу: зато гибко.</p>
+
+<h2 id="комментарии-в-тексте">Комментарии в тексте</h2>
+
+<p>В тексте поста время от времени возникает желание сделать комментарий. Исходный формат статьи Markdown.</p>
+
+<p>Вопрос: как оставлять комментарии в Markdown?</p>
+
+<p>При этом речь не идет о каком-то супер-секретном комментарии. В любом случае репозиторий блога публичный.
+Даже если комментария не будет в срендеренном HTML, его легко можно посмотреть в исходнике на github.
+Цель только в том, чтобы оставить коммент (навроде todo), который не будет мешать читать пост.</p>
+
+<p>В спецификации Markdown комментариев нет.</p>
+
+<p>Ответ есть в <a href="https://stackoverflow.com/questions/4823468/comments-in-markdown">этой статье на SO</a>.</p>
+
+<p>Там предложено много вариантов, например, способ,
+<a href="https://stackoverflow.com/a/29724376">подходящий для использования внутри списков github</a>.</p>
+
+<p>Ниже же - список способов, которые я реально буду
+использовать, и здесь же можно будет протестировать совместимость при смене движка 
+Markdown.</p>
+
+<h3 id="тест-варианта-html">Тест варианта HTML</h3>
+
+<p>Код (третий дефис не понял зачем, но говорят, что надо):</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!---
+строка 1
+
+строка 2
+--&gt;
+</code></pre></div></div>
+
+<p>Тест (ничего не должно вывестись):</p>
+
+<!--
+строка 1
+
+строка 2
+-->
+
+<p>Текст после комментария (выше не должно быть заметно, как будто там что-то было).</p>
+
+<p>Текст после текста (для сравнения).</p>
+
+<h3 id="тест-варианта-url">Тест варианта URL</h3>
+
+<p>Код:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="ss">//</span><span class="p">]:</span> <span class="sx">#</span> <span class="nn">(Тут текст комментария)</span>
+<span class="p">[</span><span class="ss">//</span><span class="p">]:</span> <span class="sx">#</span> <span class="nn">(Многострочность через повторение)</span>
+<span class="p">[</span><span class="ss">//</span><span class="p">]:</span> <span class="sx">#</span> <span class="nn">(Перед и после комментария нужна пустая строка)</span>
+</code></pre></div></div>
+
+<p>Тест (ничего не должно вывестись):</p>
+
+<p>Текст после комментария (выше не должно быть заметно, как будто там что-то было).</p>
+
+<p>Ну, вроде работает.</p>
+
+<h2 id="редиректы-на-githubio">Редиректы на github.io</h2>
+
+<p>Как ты сделаешь редирект в условиях github.io?</p>
+
+<h3 id="вариант-1-meta-refreh-в-indexhtml">Вариант 1: meta refreh в index.html</h3>
+
+<p>Например, <a href="https://gist.github.com/domenic/1f286d415559b56d725bee51a62c24a7">созданием index.html с meta refresh</a>.</p>
+
+<p>Из чего следует, что все страницы, которые ты потенциально можешь захотеть редиректнуть,
+должны быть <code class="highlighter-rouge">*.html</code>.</p>
+
+<h3 id="вариант-2-симлинки">Вариант 2: симлинки</h3>
+
+<p>Как оказалось, <a href="https://github.com/chetabahana/symlink">Github Pages поддерживает симлинки</a>.</p>
+
+<p>Это значит, что можно обойтись вообще без редиректов - просто делать симлинк со старой папки поста на новое место публикации. Контент будет открываться и по старым, и по новым ссылкам. Нужно также следить, чтобы корректно генерировался canonical.</p>
+
+<h2 id="редакторы-для-markdown">Редакторы для Markdown</h2>
+
+<ul>
+  <li>PHPStorm - хорошо, но баги, может поправят.</li>
+  <li>ReText - не совсем как на github, <a href="https://github.com/retext-project/retext/issues/369">чтобы поменять flavor нужно ставить pip’ом расширения</a>… брр.</li>
+  <li>Atom - глючит, падает, вместо preview выводит странные эксепшены.</li>
+  <li>Sublime + MarkdownPreview - как-то тоже не очень.. результат приходится смотреть в браузере. Зато рендерит самим github’ом это в целом неплохо.</li>
+  <li>Ghosttext пока не пробовал, инфа <a href="https://ru.stackoverflow.com/questions/549184/%D0%9A%D0%B0%D0%BA-%D0%B2-sublime-text-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-live-preview-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8-markdown">тут</a>.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-03-06T04:45:00-06:00">March 6, 2021</time></p>
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/hist/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Your awesome title. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/hist/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

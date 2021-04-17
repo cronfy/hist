@@ -1,7 +1,7 @@
 var store = [{
-        "title": "Welcome to Jekyll!",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["jekyll","update"],
+        "title": "Как вести блог в формате git?",
+        "excerpt":"Решил попробовать сделать запись для блога в git. И тут как начали появляться вопросы, как начали появляться вопросы! Пост-размышление. Нужно подумать, что нужно учесть при ведении блога в формате репозитория git. Итак. Основные моменты понятны - берешь да ведёшь. Есть github.io для публикации. Есть Jekyll и аналоги. Структурирование информации и...","categories": ["v1"],
         "tags": [],
-        "url": "/hist/jekyll/update/2021/04/03/welcome-to-jekyll.html",
+        "url": "/hist/v1/2021/03/06/how-to-blog-via-git.html",
         "teaser": null
       }]

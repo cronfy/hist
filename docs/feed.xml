@@ -1,13 +1,143 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/hist/feed.xml" rel="self" type="application/atom+xml" /><link href="/hist/" rel="alternate" type="text/html" /><updated>2021-04-10T13:24:59-05:00</updated><id>/hist/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="/hist/jekyll/update/2021/04/03/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-04-03T06:09:47-05:00</published><updated>2021-04-03T06:09:47-05:00</updated><id>/hist/jekyll/update/2021/04/03/welcome-to-jekyll</id><content type="html" xml:base="/hist/jekyll/update/2021/04/03/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/hist/feed.xml" rel="self" type="application/atom+xml" /><link href="/hist/" rel="alternate" type="text/html" /><updated>2021-04-17T01:45:17-05:00</updated><id>/hist/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Как вести блог в формате git?</title><link href="/hist/v1/2021/03/06/how-to-blog-via-git.html" rel="alternate" type="text/html" title="Как вести блог в формате git?" /><published>2021-03-06T04:45:00-06:00</published><updated>2021-03-06T04:45:00-06:00</updated><id>/hist/v1/2021/03/06/how-to-blog-via-git</id><content type="html" xml:base="/hist/v1/2021/03/06/how-to-blog-via-git.html">&lt;p&gt;Решил попробовать сделать запись для блога в git. И тут как начали появляться вопросы, как начали появляться вопросы!&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Пост-размышление.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Нужно подумать, что нужно учесть при ведении блога в формате репозитория git.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Итак.&lt;/p&gt;
+
+&lt;p&gt;Основные моменты понятны - берешь да ведёшь. Есть github.io для публикации. Есть Jekyll и аналоги.&lt;/p&gt;
+
+&lt;h2 id=&quot;структурирование-информации-и-изменения-структуры-редиректы&quot;&gt;Структурирование информации и изменения структуры (редиректы)&lt;/h2&gt;
+
+&lt;p&gt;Вопрос в структурировании информации и постоянных ссылках на неё. Если контент будет добавляться, то рано или поздно его захочется структурировать. Плоский список по дате создания неудобен, так как не решает задачу поиска нужной информации, когда вспомнил “я что-то такое писал об X, дай-ка посмотрю”.&lt;/p&gt;
+
+&lt;p&gt;Соответственно, нужна иерархическая структура контента, не важно суть сейчас какая, главное, что она будет.&lt;/p&gt;
+
+&lt;p&gt;Однако рано или поздно любая структура перестает нравиться и хочется её кардинально изменить.&lt;/p&gt;
+
+&lt;p&gt;И в такой момент я не хочу вспоминать, в каких местах я оставлял ссылки на контент и могу ли я ими пожертвовать? Или я должен там отредактировать ссылку? Или нужно сделать редирект? Или придется оставить старую? Я не хочу после этого махать рукой “ай, ладно, проще в старой структуре все хранить”. Я хочу просто поменять структуру как мне удобно, не беспокоясь о том, что какие-то ссылки побьются. Хочу, чтобы изменение структуры происходило Без, Проб, Лем.&lt;/p&gt;
+
+&lt;p&gt;Когда-нибудь мне может быть также захочется поменять структуру внешних URL. Ну мало ли. Или я буду вынужден сделать это по каким-то причинам. Соответственно, это не должно вызывать сложности - составил линковку старых ссылок на новые, сделал редиректы и вперед. (Сам процесс составления линковки не должен вызывать сложности).&lt;/p&gt;
+
+&lt;p&gt;Я думаю, решить эту проблему можно таким способом расположения контента:&lt;/p&gt;
+
+&lt;p&gt;Папка content/ — здесь хранится контент (не публикуется, только хранится). Содержит контент в любой структуре, в которой удобно. Ссылок сюда не даём. Это такой раздел с исходником информации.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;content/любая/структура/как/сейчас/удобно/хранить/контент/Пост_1&lt;/code&gt; - пост 1, содержит файлы content.md и .metadata&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;content/любая/структура/как/сейчас/удобно/хранить/контент/Пост_2&lt;/code&gt; - аналогично, пост 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Папка public/ — здесь публикуется контент&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;public/v1/&lt;/strong&gt; - первая версия структуры внешних URL (любая структура внешних URL)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;public/v1/post1/&lt;/code&gt; - Пост 1, содержит файлы index.html и .metadata&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;public/v1/post2/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;public/v2/&lt;/strong&gt; - вторая версия структуры внешних URL (любая другая структура внешних URL)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;public/v2/blog/2021-03-06-how-to-blog-in-git.html&lt;/code&gt; - Пост 1&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;public/v2/programming/2021-02-18-phpstorm-is-cool.html&lt;/code&gt; - Пост 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Изначально делаем &lt;strong&gt;public/v1/&lt;/strong&gt;, и в ней размещаем посты методом копирования контента из content/. Оставляем мета-данные - из каких недр content’а нужно брать информацию сюда. В принципе, руками ничего копировать не надо - задачу решает автоматический генератор.&lt;/p&gt;
+
+&lt;p&gt;Ссылки так и будут выглядеть: myblog.example.com/v1/… . Наверное, это единственный неприятный сайд-эффект от такой схемы. Но вместо v1, v2… можно писать что-нибудь веселенькое.&lt;/p&gt;
+
+&lt;p&gt;Если мы решили поменять структуру внешних ссылок public/, то создаем новую папку &lt;em&gt;public/v2/&lt;/em&gt;, настраиваем для неё генератор, чтобы публиковал посты по новой структуре, генерируем посты. После этого с предыдущей версии public/v1/ можно сделать редиректы на новую. Так как и в прежней и в новой версии public/ мы имеем ссылки на один и тот же content/, это будет несложно сделать.&lt;/p&gt;
+
+&lt;p&gt;И тут важно отметить, что ссылкой, которую мы можем редиректить, может быть только html-файл (в связи с ограничениями github.io). А например, если у поста есть ресурс в виде приаттаченного doc-файла, то редирект для него сделать не получится. Так что, чтобы все упростить, ограничим наше стремление сохранять ссылки при перемещении только для постов (и договоримся, что если размещаем где-то ссылку на блог, то это должна быть ссылка именно на пост, а не на ресурс этого поста).&lt;/p&gt;
+
+&lt;p&gt;Со сменой URL понятно, теперь про смену структуры контента. Тут тоже несложно.&lt;/p&gt;
+
+&lt;p&gt;Если мы решили поменять структуру content/ - сохраняем у каждого контента метаданные, где он лежит сейчас, перераспределяем все по новым папкам, составляем карту линковки старое -&amp;gt; новое, проходимся по метаданным public/v…/, перебиваем старую линковку (это которая в метаданных) на content/ на новую.&lt;/p&gt;
+
+&lt;p&gt;Вот. Как-то так. Кто-то скажет: избыточность, а я скажу: зато гибко.&lt;/p&gt;
+
+&lt;h2 id=&quot;комментарии-в-тексте&quot;&gt;Комментарии в тексте&lt;/h2&gt;
+
+&lt;p&gt;В тексте поста время от времени возникает желание сделать комментарий. Исходный формат статьи Markdown.&lt;/p&gt;
+
+&lt;p&gt;Вопрос: как оставлять комментарии в Markdown?&lt;/p&gt;
+
+&lt;p&gt;При этом речь не идет о каком-то супер-секретном комментарии. В любом случае репозиторий блога публичный.
+Даже если комментария не будет в срендеренном HTML, его легко можно посмотреть в исходнике на github.
+Цель только в том, чтобы оставить коммент (навроде todo), который не будет мешать читать пост.&lt;/p&gt;
+
+&lt;p&gt;В спецификации Markdown комментариев нет.&lt;/p&gt;
+
+&lt;p&gt;Ответ есть в &lt;a href=&quot;https://stackoverflow.com/questions/4823468/comments-in-markdown&quot;&gt;этой статье на SO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Там предложено много вариантов, например, способ,
+&lt;a href=&quot;https://stackoverflow.com/a/29724376&quot;&gt;подходящий для использования внутри списков github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ниже же - список способов, которые я реально буду
+использовать, и здесь же можно будет протестировать совместимость при смене движка 
+Markdown.&lt;/p&gt;
+
+&lt;h3 id=&quot;тест-варианта-html&quot;&gt;Тест варианта HTML&lt;/h3&gt;
+
+&lt;p&gt;Код (третий дефис не понял зачем, но говорят, что надо):&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!---
+строка 1
+
+строка 2
+--&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Тест (ничего не должно вывестись):&lt;/p&gt;
+
+&lt;!--
+строка 1
+
+строка 2
+--&gt;
+
+&lt;p&gt;Текст после комментария (выше не должно быть заметно, как будто там что-то было).&lt;/p&gt;
+
+&lt;p&gt;Текст после текста (для сравнения).&lt;/p&gt;
+
+&lt;h3 id=&quot;тест-варианта-url&quot;&gt;Тест варианта URL&lt;/h3&gt;
+
+&lt;p&gt;Код:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;(Тут текст комментария)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;(Многострочность через повторение)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;(Перед и после комментария нужна пустая строка)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Тест (ничего не должно вывестись):&lt;/p&gt;
+
+&lt;p&gt;Текст после комментария (выше не должно быть заметно, как будто там что-то было).&lt;/p&gt;
+
+&lt;p&gt;Ну, вроде работает.&lt;/p&gt;
+
+&lt;h2 id=&quot;редиректы-на-githubio&quot;&gt;Редиректы на github.io&lt;/h2&gt;
+
+&lt;p&gt;Как ты сделаешь редирект в условиях github.io?&lt;/p&gt;
+
+&lt;h3 id=&quot;вариант-1-meta-refreh-в-indexhtml&quot;&gt;Вариант 1: meta refreh в index.html&lt;/h3&gt;
+
+&lt;p&gt;Например, &lt;a href=&quot;https://gist.github.com/domenic/1f286d415559b56d725bee51a62c24a7&quot;&gt;созданием index.html с meta refresh&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Из чего следует, что все страницы, которые ты потенциально можешь захотеть редиректнуть,
+должны быть &lt;code class=&quot;highlighter-rouge&quot;&gt;*.html&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;вариант-2-симлинки&quot;&gt;Вариант 2: симлинки&lt;/h3&gt;
+
+&lt;p&gt;Как оказалось, &lt;a href=&quot;https://github.com/chetabahana/symlink&quot;&gt;Github Pages поддерживает симлинки&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Это значит, что можно обойтись вообще без редиректов - просто делать симлинк со старой папки поста на новое место публикации. Контент будет открываться и по старым, и по новым ссылкам. Нужно также следить, чтобы корректно генерировался canonical.&lt;/p&gt;
+
+&lt;h2 id=&quot;редакторы-для-markdown&quot;&gt;Редакторы для Markdown&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PHPStorm - хорошо, но баги, может поправят.&lt;/li&gt;
+  &lt;li&gt;ReText - не совсем как на github, &lt;a href=&quot;https://github.com/retext-project/retext/issues/369&quot;&gt;чтобы поменять flavor нужно ставить pip’ом расширения&lt;/a&gt;… брр.&lt;/li&gt;
+  &lt;li&gt;Atom - глючит, падает, вместо preview выводит странные эксепшены.&lt;/li&gt;
+  &lt;li&gt;Sublime + MarkdownPreview - как-то тоже не очень.. результат приходится смотреть в браузере. Зато рендерит самим github’ом это в целом неплохо.&lt;/li&gt;
+  &lt;li&gt;Ghosttext пока не пробовал, инфа &lt;a href=&quot;https://ru.stackoverflow.com/questions/549184/%D0%9A%D0%B0%D0%BA-%D0%B2-sublime-text-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-live-preview-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8-markdown&quot;&gt;тут&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="v1" /><summary type="html">Решил попробовать сделать запись для блога в git. И тут как начали появляться вопросы, как начали появляться вопросы!</summary></entry></feed>
