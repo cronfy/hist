@@ -113,3 +113,20 @@ PR.S. Надо найти, что об этом думают Роб Мартин
 ## Паоризанский рефакторинг JS в legacy-проекте
 
 Ну а кому это вообще интересно. Go forward. Use react.
+
+## local partizanen gitignore
+
+В `.git/config`:
+
+```
+[core]
+#        ...
+    excludesfile = dev-cronfy/git/.local_gitignore
+```
+
+В `dev-cronfy/git/.local_gitignore`:
+
+```gitignore
+/dev-cronfy
+# ...
+```
